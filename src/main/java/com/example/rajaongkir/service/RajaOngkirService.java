@@ -77,7 +77,7 @@ public class RajaOngkirService {
         ResultEntity l_output;
 
         try {
-            List<Provinsi> tmp_provinsiList = g_provinsiRepository.findAll();
+            List<Provinsi> tmp_provinsiList = g_provinsiRepository.getAllProvinsi();
 
             l_output = new ResultEntity(tmp_provinsiList, ErrorCode.BIT_000);
 
@@ -131,6 +131,22 @@ public class RajaOngkirService {
             List<Kelurahan> kelurahanList = g_kelurahanRepository.getByKecamatanId(p_kecamatanId);
 
             l_output = new ResultEntity(kelurahanList, ErrorCode.BIT_000);
+
+        }catch (Exception e){
+            e.printStackTrace();
+
+            l_output = new ResultEntity(e.toString(), ErrorCode.BIT_999);
+        }
+
+        return l_output;
+    }
+
+    public ResultEntity getKotaKab(){
+        ResultEntity l_output;
+
+        try {
+
+            l_output = new ResultEntity(g_kotaKabupatenRepository.getAllKotaKab(), ErrorCode.BIT_000);
 
         }catch (Exception e){
             e.printStackTrace();

@@ -37,4 +37,9 @@ public class RajaOngkirController {
     public ResultEntity getKelurahan(@PathVariable("id_kecamatan") int p_kecamatanId){
         return g_rajaOngkirService.getKelurahan(p_kecamatanId);
     }
+
+    @GetMapping("/kotaKab")
+    public ResultEntity getKotaKab(){
+        return g_rajaOngkirService.getKotaKab();
+    }
 }

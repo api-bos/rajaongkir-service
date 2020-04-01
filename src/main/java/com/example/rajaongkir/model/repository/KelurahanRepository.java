@@ -8,6 +8,6 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 public interface KelurahanRepository extends JpaRepository<Kelurahan, Integer> {
-    @Query(value = "SELECT * FROM kelurahan WHERE id_kecamatan = :id_kecamatan", nativeQuery = true)
+    @Query(value = "SELECT * FROM kelurahan WHERE id_kecamatan = :id_kecamatan ORDER BY id_kelurahan", nativeQuery = true)
     List<Kelurahan> getByKecamatanId(@Param("id_kecamatan") int id_kecamatan);
 }
