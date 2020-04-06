@@ -1,0 +1,17 @@
+com\example\rajaongkir\model\request\RequestData.class
+com\example\rajaongkir\model\repository\ProvinsiRepository.class
+com\example\rajaongkir\model\response\Cost.class
+com\example\rajaongkir\model\repository\KecamatanRepository.class
+com\example\rajaongkir\model\dim\Kelurahan.class
+com\example\rajaongkir\model\response\Costs.class
+com\example\rajaongkir\model\response\RajaOngkir.class
+com\example\rajaongkir\RajaongkirApplication.class
+com\example\rajaongkir\model\repository\KotaKabupatenRepository.class
+com\example\rajaongkir\model\repository\KelurahanRepository.class
+com\example\rajaongkir\model\dim\KotaKabupaten.class
+com\example\rajaongkir\model\response\ResponseData.class
+com\example\rajaongkir\service\RajaOngkirService.class
+com\example\rajaongkir\controller\RajaOngkirController.class
+com\example\rajaongkir\model\dim\Kecamatan.class
+com\example\rajaongkir\model\dim\Provinsi.class
+com\example\rajaongkir\model\response\Results.class
