@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/bos")
-@CrossOrigin(origins = {"*"})
 public class RajaOngkirController {
     @Autowired
     RajaOngkirService g_rajaOngkirService;
